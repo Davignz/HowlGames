@@ -80,6 +80,10 @@ section {
   font-family: 'Jolly Lodger', cursive;
   font-size: 40px;
 }
+.play_area:hover {
+  background: #0a0a0a;
+  box-shadow: 0 0 40px #8c0707, 0 0 60px #8c0707, 0 0 80px #8c0707;
+}
 #jogos {
   height: 100vh;
   background-color: blueviolet;
