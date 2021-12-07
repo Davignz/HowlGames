@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   color: #fff;
+  user-select: none;
 }
 html {
   scroll-behavior: smooth;
@@ -28,11 +29,31 @@ section {
 .menu {
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
+}
+.menu a {
+  position: relative;
+}
+.menu a:after {
+  content: '';
+  position: absolute;
+  background-color: #8c0707;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -6px;
+}
+.menu a:hover:after {
+  width: 100%;
+  transition: 0.3s ease;
+  color: #fff;
 }
 .menu li a {
-  margin-right: 20px;
+  margin: 20px;
   text-decoration: none;
   font-size: 20px;
+  padding: 10px;
+  font-weight: 700;
 }
 .menu li a:hover {
   color: #8c0707;
@@ -45,6 +66,7 @@ section {
   text-decoration: none;
   font-family: 'Jolly Lodger', cursive;
   font-size: 40px;
+  text-shadow: 0 0 0.25em;
 }
 /*                  HOME                 */
 #home {
@@ -79,10 +101,21 @@ section {
   text-decoration: none;
   font-family: 'Jolly Lodger', cursive;
   font-size: 40px;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  overflow: hidden;
+  transition: 0.2s;
+  border-radius: 15px;
+  border: 3px solid #550505;
+  text-shadow: 0 0 0.09em;
+  box-shadow: 0 0 0.4em #8c0707;
 }
 .play_area:hover {
-  background: #0a0a0a;
-  box-shadow: 0 0 40px #8c0707, 0 0 60px #8c0707, 0 0 80px #8c0707;
+  background: #8c0707;
+  box-shadow: 0 0 10px #8c0707, 0 0 40px #8c0707, 0 0 80px #8c0707;
+  border: 3px solid #8c0707;
+  transition: 0.3s ease-in;
+  color: #0a0a0a;
 }
 #jogos {
   height: 100vh;
