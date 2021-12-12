@@ -269,6 +269,7 @@ section {
   width: 100%;
   margin: 10px;
   flex-direction: column;
+  text-align: center;
 }
 .cardp {
   display: flex;
@@ -277,7 +278,7 @@ section {
   background: #000;
   border-radius: 10px;
   margin: 20px 0 40px 0;
-  padding: 15px;
+  padding: 15px 20px;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 0 20px #550505;
@@ -297,5 +298,52 @@ section {
   width: 100%;
   height: 50vh;
   background: #000;
-  border: 1px solid white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.ttfooter {
+  text-shadow: 0 0 0.25em;
+  font-size: 60px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+.socialmedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+.socialmedia a {
+  margin-right: 35px;
+}
+.contact {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 25px;
+}
+.local {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 25px;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 500px;
+}
+.mapa {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+}
+.mapa img {
+  flex: 1 1 400px;
+  width: 100%;
+}
+.footer {
+  margin: 20px 0 0 0;
+  text-shadow: 0 0 0.15em;
 }

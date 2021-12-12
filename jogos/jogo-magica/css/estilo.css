@@ -1,0 +1,26 @@
+table {
+  margin: 10px;
+  display: inline;
+  cursor: pointer;
+}
+td {
+  border: solid 1px #000;
+  text-align: center;
+  width: 21px;
+  height: 21px;
+}
+#principal {
+  padding: 10px;
+  overflow: auto;
+  position: relative;
+  margin: 0 auto;
+  border: dotted 2px #efefef;
+  font: 14px 'Comic Sans MS', fantasy;
+  width: 500px;
+  height: 550px;
+  background-color: #eefede;
+  text-align: center;
+}
+#painel {
+  display: none;
+}
