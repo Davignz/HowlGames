@@ -131,7 +131,7 @@ function drawSnake() {
     snakeParts.shift()
   }
 
-  ctx.fillStyle = 'orange'
+  ctx.fillStyle = 'red'
   ctx.fillRect(headX * tileCount, headY * tileCount, tileSize, tileSize)
 }
 
@@ -141,7 +141,7 @@ function changeSnakePosition() {
 }
 
 function drawApple() {
-  ctx.fillStyle = 'red'
+  ctx.fillStyle = 'yellow'
   ctx.fillRect(appleX * tileCount, appleY * tileCount, tileSize, tileSize)
 }
 

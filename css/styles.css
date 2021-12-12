@@ -274,7 +274,6 @@ section {
 .cardp {
   display: flex;
   width: 100%;
-  max-height: 100vh;
   background: #000;
   border-radius: 10px;
   margin: 20px 0 40px 0;
@@ -289,7 +288,7 @@ section {
   width: 300px;
   border-radius: 5px;
 }
-.cardp h1 p {
+.cardp h1 h2 {
   font-size: 30px;
 }
 #contatos {
