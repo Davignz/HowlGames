@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CITY MAGIC</title>
+    <title>Jogo da Mágica</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, intital-scale=1.0" />
-    <meta
-      name="description Autor:Cidade Data: 29/10/2021 titulo:mágica wellcity"
-    />
     <link rel="styleSheet" type="text/css" href="css/estilo.css" />
+    <link rel="shortcut icon" href="/img/magic.png">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Josefin+Sans:wght@300;400;600&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -15,19 +17,14 @@
       <span class="txtprincipal txth1"><h1>Pense em um número de 1 a 63.</h1></span>
       <span class="txtprincipal txth2"><h2>Nós da Howl temos poderes mágicos &#x1F60E</h2></span
       >
-      <br /><br /><br /><button
-        style="font-size: 50px; cursor: pointer; font-weight: bold"
-        onclick="GerarPainel()"
-        onmouseover="style.color='#FF0000'"
-        onmouseout="style.color=''"
-      >
-        OK
-      </button>
+      <span class="txtprincipal"><h3>Pressione F5 para reiniciar!</h3></span>
+      <button class="btnprinc" onclick="GerarPainel()">Play</button>
+
     </div>
 
     <div id="painel">
       <span><h1>Clique nos blocos onde aparece o número:</h1></span>
-      <!-- primeiro -->
+
       <table
         cellspacing="0"
         onclick="style.color = (style.color == '') ? '#CC0000' : ''"
@@ -357,17 +354,9 @@
           <td>63</td>
         </tr>
       </table>
-      <br /><br />
 
       <center>
-        <button
-          style="font-weight: bold; cursor: pointer"
-          onmouseover="style.color='#FF0000'"
-          onmouseout="style.color=''"
-          onclick="Resultado()"
-        >
-          OK
-        </button>
+        <button class="btn2" onclick="Resultado()">Resultado</button>
       </center>
     </div>
 

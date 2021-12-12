@@ -329,6 +329,9 @@ section {
   flex-wrap: wrap;
   margin: 25px;
 }
+.contact h1 {
+  text-shadow: 0 0 0.25em;
+}
 .local {
   display: flex;
   flex-direction: column;
@@ -337,6 +340,9 @@ section {
   align-items: center;
   justify-content: center;
   flex: 1 1 500px;
+}
+.local h1 {
+  text-shadow: 0 0 0.25em;
 }
 .mapa {
   display: flex;
